@@ -7,43 +7,42 @@ body {
 
 .container {
   height: 100vh;
+
   @include flexCenter;
 }
 
 .result {
-  display: flex;
+  width: 65rem;
   border-radius: 1.6rem;
   box-shadow: 0px 0px 50px -32px rgba(66, 68, 90, 1);
 
-  width: 65rem;
+  display: flex;
 }
 
 .result__primary {
+  width: 50%;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  border-radius: 1.6rem;
   background: linear-gradient(
     to bottom,
     $blue-lightSlate--bg,
     $blue-lightRoyal--bg
   );
-  border-radius: 1.6rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  width: 50%;
-  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .result__main {
+  margin-bottom: 3.2rem;
   color: $lavender-light;
   font-size: 2.2rem;
   font-weight: $font-weight--bold;
-  margin-bottom: 3.2rem;
 }
 
 .score {
-  @include flexCenter(column);
   background: linear-gradient(
     to bottom,
     $blue-violet--circle,
@@ -53,6 +52,8 @@ body {
   width: 16rem;
   border-radius: 100rem;
   margin-bottom: 3.2rem;
+
+  @include flexCenter(column);
 }
 
 .score__primary {
@@ -103,7 +104,6 @@ body {
   justify-content: space-between;
   padding: 1.6rem 1.2rem;
   border-radius: 0.8rem;
-
   font-size: 1.6rem;
   font-weight: $font-weight--extraBold;
 }

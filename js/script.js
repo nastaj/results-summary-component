@@ -10,7 +10,7 @@ const getData = async function () {
     const data = await response.json();
     return data;
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };
 
@@ -24,7 +24,7 @@ const generateMarkup = async function () {
               <div class="tab tab-${category}">
                 <div class="tab__type">
                   <img
-                    src="assets/images/icon-${category}.svg"
+                    src="${entry.icon}"
                     alt="${entry.category}"
                   />
                   <p class="tab__type__title--${category}">${entry.category}</p>
@@ -35,7 +35,7 @@ const generateMarkup = async function () {
       tabsContainer.insertAdjacentHTML("beforebegin", markup);
     });
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };
 generateMarkup();
@@ -50,7 +50,7 @@ const setFinalScore = async function () {
 
     scoreEl.textContent = scoreFinal;
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 };
 setFinalScore();
