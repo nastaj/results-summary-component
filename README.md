@@ -21,7 +21,7 @@ Second project of the Frontend Mentor challenges, featuring results summary comp
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/results-summary-component-using-sassscss-flexbox-and-js-SnaVVgCpLL)
-- Live Site URL: [GitHub Page](https://github.com/nastaj/results-summary-component)
+- Live Site URL: [GitHub Page](https://nastaj.github.io/results-summary-component/)
 
 ### Built with
 
