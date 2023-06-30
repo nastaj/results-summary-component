@@ -1,0 +1,178 @@
+@import "./resets";
+@import "./variables";
+
+body {
+  font-family: $font-hankenGrotesk;
+}
+
+.container {
+  height: 100vh;
+  @include flexCenter;
+}
+
+.result {
+  display: flex;
+  border-radius: 1.6rem;
+  box-shadow: 0px 0px 50px -32px rgba(66, 68, 90, 1);
+
+  width: 65rem;
+}
+
+.result__primary {
+  background: linear-gradient(
+    to bottom,
+    $blue-lightSlate--bg,
+    $blue-lightRoyal--bg
+  );
+  border-radius: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 50%;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.result__main {
+  color: $lavender-light;
+  font-size: 2.2rem;
+  font-weight: $font-weight--bold;
+  margin-bottom: 3.2rem;
+}
+
+.score {
+  @include flexCenter(column);
+  background: linear-gradient(
+    to bottom,
+    $blue-violet--circle,
+    $blue-persian--circle
+  );
+  height: 16rem;
+  width: 16rem;
+  border-radius: 100rem;
+  margin-bottom: 3.2rem;
+}
+
+.score__primary {
+  color: $white;
+  font-size: 4.8rem;
+}
+
+.score__secondary {
+  color: hsla(241, 100%, 89%, 0.5);
+  font-size: 1.6rem;
+}
+
+.result__primary--caption {
+  color: $white;
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.result__primary--description {
+  color: $lavender-light;
+  font-size: 1.6rem;
+}
+
+.summary {
+  width: 50%;
+  padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: $font-weight--extraBold;
+}
+
+.summary__heading {
+  color: $blue-darkGray;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.tabs {
+  margin-bottom: 2.4rem;
+}
+
+.tab,
+.tab__type {
+  @include flexCenter;
+}
+
+.tab {
+  margin-bottom: 1.6rem;
+  justify-content: space-between;
+  padding: 1.6rem 1.2rem;
+  border-radius: 0.8rem;
+
+  font-size: 1.6rem;
+  font-weight: $font-weight--extraBold;
+}
+
+.tab__type {
+  gap: 0.8rem;
+}
+
+.tab-reaction {
+  background-color: $red-light;
+}
+
+.tab-memory {
+  background-color: $yellow-orangey;
+}
+
+.tab-verbal {
+  background-color: $green-teal;
+}
+
+.tab-visual {
+  background-color: $blue-cobalt;
+}
+
+.tab__type__title--reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.tab__type__title--memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.tab__type__title--verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.tab__type__title--visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.tab__type__score--current {
+  color: $blue-darkGray;
+  font-weight: $font-weight--extraBold;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 2.4rem;
+  padding: 1.2rem 0.8rem;
+  border: none;
+  background-color: $blue-darkGray;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    $blue-lightSlate--bg,
+    $blue-lightRoyal--bg
+  );
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

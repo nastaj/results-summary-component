@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+$font-hankenGrotesk: "Hanken Grotesk", sans-serif;
+
+// Primary
+$red-light: hsla(0, 100%, 67%, 0.1);
+$yellow-orangey: hsla(39, 100%, 56%, 0.1);
+$green-teal: hsla(166, 100%, 37%, 0.1);
+$blue-cobalt: hsla(234, 85%, 45%, 0.1);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$blue-pale: hsl(221, 100%, 96%);
+$lavender-light: hsl(241, 100%, 89%);
+$blue-darkGray: hsl(224, 30%, 27%);
+
+// Gradients
+$blue-lightSlate--bg: hsl(252, 100%, 67%);
+$blue-lightRoyal--bg: hsl(241, 81%, 54%);
+
+$blue-violet--circle: hsla(256, 72%, 46%, 1);
+$blue-persian--circle: hsla(241, 72%, 46%, 0);
+
+// Widths
+$width-mobile: 375px;
+$width-desktop: 1440px;
+
+$paragraph-default: 15px;
+
+// Font weights
+$font-weight--medium: 500;
+$font-weight--bold: 700;
+$font-weight--extraBold: 800;
+
+@mixin flexCenter($direction: row) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
