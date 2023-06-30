@@ -176,3 +176,33 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+// Media queries
+@media (max-width: 500px) {
+  body {
+    width: auto;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .result {
+    @include flexCenter(column);
+    width: 100%;
+  }
+
+  .result__primary {
+    width: 100%;
+    border-radius: 0 0 1.6rem 1.6rem;
+    padding: 2rem;
+  }
+
+  .score {
+    margin-bottom: 1.6rem;
+  }
+
+  .summary {
+    width: 100%;
+  }
+}
